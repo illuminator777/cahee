@@ -2,6 +2,21 @@ body {
     background-color: #B07CF7;
 }
 
+.container {
+    height: 100vh;
+    font-family: 'Raleway', sans-serif;
+    color: #ffffff;
+}
+
+.row__margin {
+    margin: 0 5vw 7vh;
+}
+
+.text__bold {
+    font-weight: bold;
+    font-size: 21px;
+}
+
 .img-bg {
     background-color: none;
 }
@@ -9,3 +24,57 @@ body {
 .card-becgrnd {
     background-color: #B07CF7;
 }
+
+.in-center {
+    text-align: center;
+}
+
+.align__center {
+    height: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.p-spacing {
+    text-align: center;
+    display: inline-block;
+    padding: 0 26vw;
+    letter-spacing: -1px;
+}
+
+.big__blog {
+    font-size: 90px;
+}
+
+.nomber {
+    width: 19%;
+    margin: 1vw 1vw 6vw;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.40);
+}
+
+.img__text {
+    margin-left: -10px;
+}
+
+.text__nomber {
+    font-size: 30px;
+}
+
+.text__bottom {
+    margin: 0 2px;
+}
+
+.button {
+    background-color: #F72B3B;
+    border: none;
+    color: white;
+    padding: 10px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
