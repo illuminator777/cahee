@@ -78,3 +78,128 @@ body {
     margin: 4px 2px;
     cursor: pointer;
   }
+
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    position: relative;
+    height: 100vh;
+    background: rgb(0,196,196);
+    background: radial-gradient(circle, rgba(0,196,196,1) 0%, rgba(0,194,194,1) 14%, rgba(0,187,187,1) 50%, rgba(0,156,156,1) 100%);
+}
+
+.wrapper {
+    top: 0;
+    left: 0;
+    height: 150vh;  
+    background-image: url('/img/strawberry.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.title {
+    font-weight: bold;
+}
+
+.page-header {
+    width: 80%;
+    margin: 0 auto; 
+    padding: 40px 0;
+}
+
+.navigation__menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.navigation__item:first-child {
+    padding-right: 30vw;
+}
+
+.navigation__link {
+    display: block;
+    padding: 5px 0;
+    color: #000000;
+    text-decoration: none;
+    border-top: 3px solid transparent;
+}
+
+.navigation__item--active .navigation__link {
+    border-color: #FF6033;
+}
+
+.navigation__link:hover {
+    border-color: #FF6033;
+}
+
+.title__paragraph {
+    font-size: 17px;
+    line-height: 2;
+    margin-top: 2vw;
+}
+
+.button {
+    background-color: #FF6033;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 2vw 0;
+    cursor: pointer;
+  }
+
+.fresh {
+    width: 25%;
+    margin: 8vw 0 0 12vw;
+    display: inline-block;
+}
+
+.snap {
+    height: 45vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.img__about {
+    margin-top: -60px;
+}
+
+.title__fresh {
+    font-size: 60px;
+    font-weight: 900;
+}
+
+.paragraph__fresh {
+    color: rgba(0, 0, 0, 0.75);
+}
+
+.row {
+    display: flex;
+}
+
+.title__about {
+    font-size: 90px;
+    color: #ffffff;
+}
+
+.paragraph__about {
+    color: #ffffff;
+}
+
+.row .row__about {
+    flex-direction: column;
+    width: 35%;
+    padding-top: 6vw;
+    padding-left: 5vw;
+} 
