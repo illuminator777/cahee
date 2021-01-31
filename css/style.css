@@ -22,7 +22,7 @@ body {
 .wrapper {
     top: 0;
     left: 0;
-    height: 150vh;  
+    min-height: 150vh;  
     background-image: url('/foto/strawberry-correctly.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -125,7 +125,7 @@ body {
 
 /* ABOUT style */
 
-.title__about {
+.title__90 {
     font-size: 90px;
     color: #ffffff;
 }
@@ -142,7 +142,7 @@ body {
 } 
 
 .img__about {
-    margin-top: 15px;
+    margin-top: -20px;
 }
 
 .img__about::before {
@@ -216,12 +216,12 @@ body {
     background-color: #F72B3B;
     border: none;
     color: white;
-    padding: 10px 40px;
+    padding: 15px 40px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
+    margin: 0 2px 4px;
     cursor: pointer;
   }
 
@@ -243,18 +243,15 @@ body {
 
 .header-prgph {
     text-align: center;
-    padding: 1% 40% 2%;
+    padding: 1% 39% 2%;
 }
 
-.form {
+.wrapper-form {
     min-height: 130vh;
     background-image: url('/foto/form-footer/bg.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
 }
 
-.conainer-forms {
+.container-forms {
     width: 70%;
     margin: auto;
 }
