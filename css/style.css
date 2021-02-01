@@ -13,7 +13,6 @@ body {
 }
 
 .about {
-    position: relative;
     height: 90vh;
     background: rgb(0,196,196);
     background: radial-gradient(circle, rgba(0,196,196,1) 0%, rgba(0,194,194,1) 14%, rgba(0,187,187,1) 50%, rgba(0,156,156,1) 100%);
@@ -34,7 +33,39 @@ body {
     height: 100vh;
     font-family: 'Raleway', sans-serif;
     color: #ffffff;
-    background-color: #B07CF7;
+}
+
+/* position for elements */
+
+.position-rel {
+    position: relative;
+}
+.position-abs {
+    position: absolute;
+}
+
+/* BUTTONS style */
+
+.button {
+    background-color: #F72B3B;
+    border: none;
+    color: white;
+    padding: 15px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0 2px 4px;
+    cursor: pointer;
+  }
+
+  /*  */
+
+.align__center {
+    height: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
 }
 
 .row__margin {
@@ -44,10 +75,6 @@ body {
 .text__bold {
     font-weight: bold;
     font-size: 21px;
-}
-
-.img-bg {
-    background-color: none;
 }
 
 /* HEADER-NAVIGATION stile */
@@ -175,7 +202,6 @@ body {
 /* SUBSCRIBE style */
 
 .wrapper-subscribe {
-    position: relative;
     min-height: 70vh;  
     background-image: url('/foto/subcribe/bg.png');
 }
@@ -185,7 +211,6 @@ body {
 }
 
 .subscribe-text {
-    position: absolute;
     width: 35%;
     bottom: 35%;
     left: 9%;
@@ -209,8 +234,26 @@ body {
 /* TOMATOES style */
 
 .tomatoes {
+    padding: 10%;
     min-height: 100vh;
     background-color: #70BFFF;
+}
+
+.title__tomatoes {
+    bottom: 30vh;
+}
+
+.button-tomatoes {
+    width: 100%;
+    display: inline-flex;
+}
+
+/* .button-prgph {
+    text-align: left;
+} */
+
+.tomatoes-svg{
+    width: 50%;
 }
 
 /* BLOG style */
@@ -264,28 +307,6 @@ body {
 
 .text__nomber {
     font-size: 30px;
-}
-
-/* BUTTONS style */
-
-.button {
-    background-color: #F72B3B;
-    border: none;
-    color: white;
-    padding: 15px 40px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 0 2px 4px;
-    cursor: pointer;
-  }
-
-.align__center {
-    height: 5em;
-    display: flex;
-    align-items: center;
-    justify-content: center; 
 }
 
 /* FOOTER-FORM style */
