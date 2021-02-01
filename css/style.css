@@ -157,6 +157,62 @@ body {
     margin-left: -7vw;
 }
 
+/* GALLERY style */
+
+.gallery {
+    background-color: #FFE92F;
+    min-height: 160vh;
+}
+
+.gallery-prgph {
+    margin: 2vh 31vw 5vh;
+}
+
+.button-gallery {
+    background-color: #5585A2;
+}
+
+/* SUBSCRIBE style */
+
+.wrapper-subscribe {
+    position: relative;
+    min-height: 70vh;  
+    background-image: url('/foto/subcribe/bg.png');
+}
+
+.paragraph-sssubscribe {
+    margin: 20px 0;
+}
+
+.subscribe-text {
+    position: absolute;
+    width: 35%;
+    bottom: 35%;
+    left: 9%;
+}
+
+.row-for-input {
+    display: flex;
+    width: 55vw;
+}
+
+.input-sub {
+    width: 74%;
+}
+
+.button-subscribe {
+    margin: 0;
+    margin-left: 30px;
+    background-color: #96B92C;
+}
+
+/* TOMATOES style */
+
+.tomatoes {
+    min-height: 100vh;
+    background-color: #70BFFF;
+}
+
 /* BLOG style */
 
 .big__blog {
