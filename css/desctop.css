@@ -30,7 +30,6 @@
     /* section wrapper */
     
     .wrapper {
-        min-height: 150vh;  
         background-size: cover;
     }
     
@@ -70,7 +69,7 @@
     }
 
     .page-header-logo {
-        width: autos;
+        width: auto;
         float: left;
         margin-right: 25vw;
         margin-left: 5vw;
@@ -133,7 +132,7 @@
         display: block;
         height: 45vh;
         display: flex;
-        align-items: flex-end;
+        align-items: center;
         justify-content: center;
     }
     
@@ -305,7 +304,7 @@
     }
     
     .wrapper-form {
-        min-height: 130vh;
+        height: 60rem;
         background-image: url('/foto/form-footer/bg.png');
     }
     
