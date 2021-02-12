@@ -8,26 +8,44 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
+.blog {
+    background-color: #B07CF7;
+}
+
+.about {
+    height: 90vh;
+    background: rgb(0,196,196);
+    background: radial-gradient(circle, rgba(0,196,196,1) 0%, rgba(0,194,194,1) 14%, rgba(0,187,187,1) 50%, rgba(0,156,156,1) 100%);
+}
+
 .wrapper {
     top: 0;
     left: 0;
-    min-height: 100vh;
+    min-height: 150vh;  
     background-image: url('/foto/strawberry-correctly.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
 }
 
+.container-blog {
+    padding-top: 4vw;
+    height: 100vh;
+    font-family: 'Raleway', sans-serif;
+    color: #ffffff;
+}
+
+/* position for elements */
+
 .position-rel {
     position: relative;
 }
-
 .position-abs {
     position: absolute;
 }
 
 /* BUTTONS style */
-    
+
 .button {
     background-color: #F72B3B;
     border: none;
@@ -39,7 +57,9 @@ body {
     font-size: 16px;
     margin: 0 2px 4px;
     cursor: pointer;
-}
+  }
+
+  /*  */
 
 .align__center {
     height: 5em;
@@ -48,44 +68,33 @@ body {
     justify-content: center; 
 }
 
-/* HEADER and NAVIGATION */
-
-.header-mobile {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+.row__margin {
+    margin: 0 5vw 7vh;
 }
 
-.navigation-toggle {
-    border: none;
-    background-color: transparent;
+.text__bold {
+    font-weight: bold;
+    font-size: 21px;
 }
 
-/* TODO nav bar */
-.navigation__menu:focus {
-    display: none;
-}
+/* HEADER-NAVIGATION stile */
 
-.navigation-toggle + .navigation__menu {
-    display: block;
-}
-
-.navigation {
-    width: 100%;
+.page-header {
+    width: 80%;
+    margin: 0 auto; 
+    padding: 40px 0;
 }
 
 .navigation__menu {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: space-around;
     list-style-type: none;
-    padding: 0;
 }
 
-.navigation__menu {
-    display: none;
-} 
+.navigation__item:first-child {
+    padding-right: 30vw;
+}
 
 .navigation__link {
     display: block;
@@ -104,48 +113,21 @@ body {
     color: #000000;
 }
 
-.page-header {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    width: 90%;
-    margin: auto;
-    padding: 10px 15px 0;
-}
-
-.page-header-logo {
-    display: block;
-    width: 70%;
-    max-width: 600px;
-    height: auto;
-    margin: 0 auto;
-} 
-
-.for-all {
-    position: fixed;
-    right: 60px;
-    bottom: 40px;
-    width: 2rem;
-    height: 2rem;
-    border-radius: 50%;
-    background-color: #96B92C;
-    opacity: .6;
-}
-
-/* FRESH content */
+/* FRESH style */
 
 .fresh {
-    margin-top: 25vh;
-    text-align: center;
+    width: 25%;
+    margin: 8vw 0 0 12vw;
+    display: inline-block;
 }
 
-.title {
-    font-weight: bold;
+.title__fresh {
+    font-size: 60px;
+    font-weight: 900;
 }
 
 .title__paragraph {
-    font-size: 15px;
+    font-size: 17px;
     line-height: 2;
     margin-top: 2vw;
 }
@@ -161,29 +143,17 @@ body {
     margin: 2vw 0;
 }
 
-/* ABOUT content */
-
-.about {
-    padding: 25% 0;
-    background: rgb(0,196,196);
-    background: radial-gradient(circle, rgba(0,196,196,1) 0%, rgba(0,194,194,1) 14%, rgba(0,187,187,1) 50%, rgba(0,156,156,1) 100%);
+.snap {
+    height: 45vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
 }
 
-.row__about {
-    background-image: url('/foto/cup-raspbery.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    background-size: contain;
-}
-
-.text-about {
-    text-align: center;
-    background-color: rgba(0,156,156,0.50);
-    border-radius: 5%;
-}
+/* ABOUT style */
 
 .title__90 {
+    font-size: 90px;
     color: #ffffff;
 }
 
@@ -191,174 +161,180 @@ body {
     color: #ffffff;
 }
 
-.img-col {
-    display: none;
-}
-
-/* TOMATOES content */
-
-.tomatoes {
-    padding: 10%;
-    background-color: #70BFFF;
-}
-
-.tomatoes-menu {
-    list-style-type: none;
-    padding: 0;
-}
-
-.tomatoes-list {
-    display: flex;
+.row .row__about {
     flex-direction: column;
-    background: gainsboro;
-    margin-bottom: 10px;
-    align-items: center;
+    width: 35%;
+    padding-top: 11vw;
+    padding-left: 5vw;
+} 
+
+.img__about {
+    margin-top: -20px;
 }
 
-.bg-tomatoes {
-    background-image: url('/foto/tomatoes/img-tomat.png');
-    background-repeat: no-repeat;
+.img__about::before {
+    content: "";
+    background: url("/foto/cup-raspbery.png");
     background-size: cover;
-    background-position: center center;
-    background-size: contain;
-    height: 100%;
-    width: 100%;
+    position: absolute;
+    max-width: 710px;
+    max-height: 710px;
+    width: 71vw;
+    height: 71vw;
+    margin-left: -7vw;
 }
 
-.title__tomatoes {
-    bottom: 50%;
-}
-
-.tomatoes-svg{
-    width: 100%;
-}
-
-/* GALLERY content */
+/* GALLERY style */
 
 .gallery {
     background-color: #FFE92F;
+    min-height: 160vh;
 }
 
-.header-text {
-    width: 80%;
-    margin: auto;
-    padding-top: 2rem;
-}
-
-.conteiner-gallery {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin: auto;
-}
-
-.two-img-row {
-    display: flex;
-    flex-direction: column;
-}
-
-.gallery-img {
-    display: block;
-    width: 100%;
-    max-width: 775px;
-    height: auto;
-    margin: 0 auto;
+.gallery-prgph {
+    margin: 2vh 31vw 5vh;
 }
 
 .button-gallery {
     background-color: #5585A2;
 }
 
-/* SUBCRIBE content */
- 
+/* SUBSCRIBE style */
+
 .wrapper-subscribe {
     min-height: 70vh;  
-    background-size: contain;
     background-image: url('/foto/subcribe/bg.png');
 }
 
-.wrapper-mobile-subs {
-    padding: 10rem 0;
+.paragraph-sssubscribe {
+    margin: 20px 0;
 }
 
 .subscribe-text {
-    width: 100%;
+    width: 35%;
     bottom: 35%;
-    background-color: rgba(255, 255, 255, 0.50);
-    padding: 0 10px;
+    left: 9%;
 }
 
 .row-for-input {
     display: flex;
-    flex-direction: column;
-    width: auto;
+    width: 55vw;
 }
 
 .input-sub {
-    margin-bottom: 10px;
+    width: 74%;
 }
 
 .button-subscribe {
     margin: 0;
-    padding: 15px 0;
+    margin-left: 30px;
     background-color: #96B92C;
 }
 
-/* BLOG content */
+/* TOMATOES style */
 
-.blog {
-    background-color: #B07CF7;
-    color: white;
+.tomatoes {
+    padding: 10%;
+    min-height: 100vh;
+    background-color: #70BFFF;
+}
+
+.title__tomatoes {
+    bottom: 30vh;
+}
+
+.button-tomatoes {
+    width: 100%;
+    display: inline-flex;
+}
+
+/* .button-prgph {
+    text-align: left;
+} */
+
+.tomatoes-svg{
+    width: 50%;
+}
+
+/* BLOG style */
+
+.big__blog {
+    font-size: 90px;
+    font-weight: bold;
+    text-align: center;
 }
 
 .card-becgrnd {
     background-color: #B07CF7;
-    position: relative;
 }
 
-.card-blog-number {
-    position: absolute;
-    top: 2rem;
-    left: 2rem;
-    width: 3rem;
+.title {
+    font-weight: bold;
+}
+
+.align__center {
+    height: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.p-spacing {
+    text-align: center;
+    display: inline-block;
+    padding: 0 20vw;
+    letter-spacing: -1px;
+}
+
+.flex-blog {
+    display: flex;
+    height: 100%;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.flex-blog-text {
+    justify-content: space-around;
+}
+
+.flex-blog-number{
+    width: 20%;
     border-radius: 4px;
     background-color: rgba(0, 0, 0, 0.40);
     text-align: center;
 }
 
-.card-blog-text {
-    position: absolute;
-    bottom: 2rem;
-    left: 2rem;
+.text__nomber {
+    font-size: 30px;
 }
 
-.blog-card-img {
-    display: block;
-    width: 100%;
-    max-width: 480px;
-    height: auto;
-    margin: 0 auto;
+/* FOOTER-FORM style */
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 7%;
 }
 
-/* FORM and FOOTER content */
+.header-prgph {
+    text-align: center;
+    padding: 1% 39% 2%;
+}
 
 .wrapper-form {
-    background-size: cover;
+    min-height: 130vh;
     background-image: url('/foto/form-footer/bg.png');
 }
 
 .container-forms {
-    width: 90%;
+    width: 70%;
     margin: auto;
-}
-
-.title-header {
-    font-size: x-large;
 }
 
 .all-form {
-    width: 80%;
-    margin: auto;
+    width: 50%;
 }
 
 .all-form-style {
@@ -368,9 +344,8 @@ body {
     opacity: 0.4;
     color: #ffffff;
     font-weight: bold;
-    width: 100%;
-    min-width: 77px;
-    height: 2.5rem;
+    width: 30vw;
+    height: 6vh;
 }
 
 .all-form-style:focus {
@@ -384,20 +359,16 @@ body {
     color: #ffffff;
 }
 
-.form-textarea{
-    height: 60px;
+.form-textarea {
+    max-width: 30vw; 
+    min-width: 30vw; 
+    height: 250px;
+    max-height: 50vh;
 }
 
 .address-col {
     display: flex;
     flex-direction: column;
-    width: 80%;
-    min-width: 77px;
-    margin: auto;
-}
-
-.cahee-email {
-    font-size: x-small;
 }
 
 .end-blog {
@@ -408,7 +379,6 @@ body {
 }
 
 .row-footer {
-    display: flex;
     width: 100%;
     padding: 2% 0;
     text-align: center;
