@@ -11,6 +11,51 @@
     .title__90 {
         font-size: 50px;
     }
+
+    .conteiner-gallery {
+        width: 90%;
+        flex-direction: row;
+    }
+
+    .two-img-row {
+        flex-direction: row;
+    }
+
+    .gallery-img {
+        display: block;
+        width: 100%;
+        max-width: 775px;
+        height: auto;
+        margin: 0 auto;
+    }
+    
+    .gallery-img-colume {
+        width: 100%;
+    }
+    
+    .gallery-img-row {
+        width: 50%;
+    }
+
+    .container-blog {
+        font-size: 1.5rem;
+    }
+
+    .card-blog-number {
+        width: 4.5rem;
+    }
+
+    .cahee-email {
+        font-size: 1rem;
+    }
+
+    .title-header {
+        font-size: 5rem;
+    }
+
+    .smoll-footer {
+        font-size: inherit;
+    }
 }
 
 @media (min-width: 768px) {    
@@ -47,6 +92,21 @@
         max-width: 600px;
         height: auto;
         margin: 0 auto;
+    }    
+
+    .container-blog {
+        font-size: 1rem;
+    }
+
+    .card-blog-number{
+        top: 1rem;
+        left: 1rem;
+        width: 3rem;
+    }
+
+    .card-blog-text {
+        bottom: 1rem;
+        left: 1rem;
     }
 }
 
@@ -60,13 +120,6 @@
     
     .position-abs {
         position: absolute;
-    }
-    
-    .align__center {
-        height: 5em;
-        display: flex;
-        align-items: center;
-        justify-content: center; 
     }
     
     .row__margin {
@@ -107,6 +160,7 @@
     }
 
     .navigation__menu {
+        display: flex;
         flex-direction: row;
     }
     
@@ -158,6 +212,16 @@
     .title__90 {
         font-size: 90px;
     }
+
+    /* TOMATOES style */
+    
+    .title__tomatoes {
+        bottom: 30vh;
+    }
+    
+    .button-prgph {
+        text-align: left;
+    }
     
     /* GALLERY style */
     
@@ -167,7 +231,7 @@
     }
     
     .gallery-prgph {
-        margin: 2vh 31vw 5vh;
+        padding: 2rem 13rem;
     }
     
     .button-gallery {
@@ -202,44 +266,10 @@
         margin-left: 30px;
     }
     
-    /* TOMATOES style */
-    
-    .title__tomatoes {
-        bottom: 30vh;
-    }
-    
-    .button-prgph {
-        text-align: left;
-    }
-    
     /* BLOG style */
-    
-    .blog {
-        background-color: #B07CF7;
-    }
-    
-    .container-blog {
-        padding-top: 4vw;
-        height: 100vh;
-        font-family: 'Raleway', sans-serif;
-        color: #ffffff;
-    }
     
     .big__blog {
         font-size: 90px;
-        font-weight: bold;
-        text-align: center;
-    }
-    
-    .card-becgrnd {
-        background-color: #B07CF7;
-    }
-        
-    .align__center {
-        height: 5em;
-        display: flex;
-        align-items: center;
-        justify-content: center; 
     }
     
     .p-spacing {
@@ -249,23 +279,16 @@
         letter-spacing: -1px;
     }
     
-    .flex-blog {
-        display: flex;
-        height: 100%;
-        align-items: flex-start;
-        flex-direction: column;
-        justify-content: space-between;
+    .card-blog-number{
+        top: 2rem;
+        left: 2rem;
+        width: 4.5rem;
     }
     
-    .flex-blog-text {
-        justify-content: space-around;
-    }
-    
-    .flex-blog-number{
-        width: 20%;
-        border-radius: 4px;
-        background-color: rgba(0, 0, 0, 0.40);
-        text-align: center;
+    .card-blog-text {
+        position: absolute;
+        bottom: 2rem;
+        left: 2rem;
     }
     
     .text__nomber {
@@ -274,21 +297,12 @@
     
     /* FOOTER-FORM style */
     
-    .header {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-top: 7%;
-    }
-    
     .header-prgph {
-        text-align: center;
         padding: 1% 39% 2%;
     }
     
     .wrapper-form {
         height: 880px;
-        background-image: url('/foto/form-footer/bg.png');
     }
     
     .container-forms {
@@ -297,41 +311,12 @@
     }
     
     .all-form {
-        width: 50%;
-    }
-    
-    .all-form-style {
-        background-color: rgb(0, 196, 196);
-        border: none;    
-        border-left: 5px solid #355c8200; 
-        opacity: 0.4;
-        color: #ffffff;
-        font-weight: bold;
-        width: 30vw;
-        height: 6vh;
-    }
-    
-    .all-form-style:focus {
-        outline: none;
-        border-left: 5px solid #355B82; 
-        opacity: 1;
-    }
-    
-    .all-form-style::placeholder{
-        font-weight: normal;
-        color: #ffffff;
+        width: 100%;
     }
     
     .form-textarea {
-        max-width: 30vw; 
-        min-width: 30vw; 
         height: 250px;
         max-height: 50vh;
-    }
-    
-    .address-col {
-        display: flex;
-        flex-direction: column;
     }
     
     .end-blog {
@@ -351,5 +336,4 @@
     .end-red-text {
         color: #FF2B58;
     }
-    }
-    
+}

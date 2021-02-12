@@ -14,7 +14,7 @@
 
 <body>
     <div class="wrapper">
-        <header class="page-header">
+        <header class="page-header" id="homed">
             <div class="header-mobile">
                 <a href="#homed">
                     <img class="page-header-logo" src="/foto/Cahee.png" alt="cahee logo">
@@ -79,8 +79,7 @@
             </div>
         </section>
         <div class="snap">
-            <a href="#hi">
-                <img src="/foto/scroll.png" alt="scroll">
+            <a class="for-all" href="#homed">
             </a>
         </div>
     </div>
@@ -172,7 +171,7 @@
         </div>
     </section>
     <section class="gallery" id="gallery">
-        <div class="header header-gallery">
+        <div class="header header-text">
             <h1 class="display-1 text-center title">Gallery</h1>
             <p class="text-center gallery-prgph">
                 Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -180,21 +179,22 @@
             </p>
         </div>
         <div class="container">
-            <div class="row">
-                <div class="col">
-                    <img src="/foto/gallery/nic.png" alt="">
+            <div class="conteiner-gallery">
+                <div class="one-foto-colume">
+                    <img src="/foto/gallery/nic.png" class="gallery-img" alt="">
                 </div>
-                <div class="col">
-                    <img src="/foto/gallery/chern.png" alt="">
-                    <img src="/foto/gallery/ezh.png" alt="">
-                </div>
-                <div class="col">
-                    <img src="/foto/gallery/cup-bl.png" alt="">
-                </div>
-                <div class="col">
-                    <img src="/foto/gallery/hum.png" alt="...">
+                <div class="two-img-colume">
+                    <img src="/foto/gallery/chern.png" class="gallery-img gallery-img-colume" alt="">
+                    <img src="/foto/gallery/ezh.png" class="gallery-img gallery-img-colume" alt="">
                 </div>
             </div>
+            <div class="conteiner-gallery">
+                <div class="two-img-row">
+                    <img src="/foto/gallery/cup-bl.png" class="gallery-img gallery-img-row" alt="">
+                    <img src="/foto/gallery/hum.png" class="gallery-img gallery-img-row" alt="...">
+                </div>
+            </div>
+
             <div class="align__center">
                 <button type="button" class="button button-gallery">
                     VIEW MORE
@@ -223,95 +223,86 @@
     </section>
     <section class="blog" id="blog">
         <div class="container container-blog">
-            <h2 class="big__blog">Blog</h2>
-            <p class="lead p-spacing">
-                Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                ullamco
-                laboris nisi ut
-                aliquip ex ea
-                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.
-            </p>
+            <div class="header-text text-center">
+                <h2 class="big__blog title">Blog</h2>
+                <p class="p-spacing">
+                    Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco
+                    laboris nisi ut
+                    aliquip ex ea
+                    commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.
+                </p>
+            </div>
             <div class="row row-cols-1 row-cols-md-3 g-4 row__margin">
                 <div class="col">
-                    <div class="card h-100 card-becgrnd">
-                        <img src="/foto/kiwi.png" class="card-img" alt="green-kiwi">
-                        <div class="card-img-overlay">
-                            <div class="flex-blog">
-                                <h5 class="card-title flex-blog-number text__bold">
-                                    <span class="text__nomber">
-                                        20
-                                    </span>
-                                    NOV
-                                </h5>
-                                <div class="flex-blog-text">
-                                    <p class="card-text text__bold">
-                                        Green Smoothies: Too Much of a Good Thing?
-                                    </p>
-                                    <p class="card-text text__small">
-                                        By Auskteez - 2 hours ago
-                                    </p>
-                                </div>
-                            </div>
+                    <div class="h-100 card-becgrnd">
+                        <img src="/foto/kiwi.png" class="blog-card-img" alt="green-kiwi">
+                        <div class="card-blog-number card-title title">
+                            <span class="text__nomber">
+                                20
+                            </span>
+                            NOV
+                        </div>
+                        <div class="card-blog-text">
+                            <p class="card-text title">
+                                Green Smoothies: Too Much of a Good Thing?
+                            </p>
+                            <p class="card-text text__small">
+                                By Auskteez - 2 hours ago
+                            </p>
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card h-100 card-becgrnd">
-                        <img src="/foto/peas.png" class="card-img" alt="green-kiwi">
-                        <div class="card-img-overlay">
-                            <div class="flex-blog">
-                                <h5 class="card-title flex-blog-number text__bold">
-                                    <span class="text__nomber">
-                                        14
-                                    </span>
-                                    NOV
-                                </h5>
-                                <div class="flex-blog-text">
-                                    <p class="card-text text__bold">
-                                        Growing Food and a “Thirst” for Innovation
-                                    </p>
-                                    <p class="card-text text__small">
-                                        By Auskteez - 3 hours ago
-                                    </p>
-                                </div>
-                            </div>
+                    <div class="h-100 card-becgrnd">
+                        <img src="/foto/peas.png" class="blog-card-img" alt="green-kiwi">
+                        <div class="card-blog-number card-title title">
+                            <span class="text__nomber">
+                                14
+                            </span>
+                            NOV
+                        </div>
+                        <div class="card-blog-text">
+                            <p class="card-text title">
+                                Growing Food and a “Thirst” for Innovation
+                            </p>
+                            <p class="card-text text__small">
+                                By Auskteez - 3 hours ago
+                            </p>
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card h-100 card-becgrnd">
-                        <img src="/foto/raspbery.png" class="card-img" alt="green-kiwi">
-                        <div class="card-img-overlay">
-                            <div class="flex-blog">
-                                <h5 class="card-title flex-blog-number text__bold">
-                                    <span class="text__nomber">
-                                        10
-                                    </span>
-                                    NOV
-                                </h5>
-                                <div class="flex-blog-text">
-                                    <p class="card-text text__bold">
-                                        Pesticides & Food: What You Need to Know
-                                    </p>
-                                    <p class="card-text text__small">
-                                        By Auskteez - 6 hours ago
-                                    </p>
-                                </div>
-                            </div>
+                    <div class="h-100 card-becgrnd">
+                        <img src="/foto/raspbery.png" class="blog-card-img" alt="green-kiwi">
+                        <div class="card-blog-number card-title title">
+                            <span class="text__nomber">
+                                10
+                            </span>
+                            NOV
+                        </div>
+                        <div class="card-blog-text">
+                            <p class="card-text title">
+                                Pesticides & Food: What You Need to Know
+                            </p>
+                            <p class="card-text text__small">
+                                By Auskteez - 6 hours ago
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="align__center">
-                <button type="button" class="button">
-                    VIEW MORE
-                </button>
-            </div>
+        </div>
+        <div class="align__center">
+            <button type="button" class="button">
+                VIEW MORE
+            </button>
+        </div>
         </div>
     </section>
     <section class="wrapper wrapper-form" id="contact">
-        <div class="header">
-            <h1 class="display-1 title">Contact</h1>
+        <div class="header-text text-center">
+            <h1 class="display-1 title title-header">Contact</h1>
             <p class="header-prgph">
                 For new projects, ideas, business or anything
                 you'd like to discuss, contact with me!
@@ -319,7 +310,7 @@
         </div>
         <div class="container container-forms">
             <div class="row">
-                <div class="col me-5">
+                <div class="col">
                     <form class="all-form" action="/action_page.php">
                         <input class="all-form-style form-your-name" type="text" id="name" name="name"
                             placeholder="Your name..." value="Auskteez Tran">
@@ -334,7 +325,7 @@
                             placeholder="Your messge..."></textarea>
                     </form>
                 </div>
-                <div class="col ms-5">
+                <div class="col">
                     <address class="address-col">
                         <span class="title">
                             ADDRESS
@@ -345,7 +336,7 @@
                         <span class="title">
                             EMAIL
                         </span>
-                        <span> cahee@domain.com
+                        <span class="cahee-email"> cahee@domain.com
                         </span>
                         <span class="title">
                             PHONE
@@ -359,7 +350,7 @@
         </div>
     </section>
     <footer class="end-blog">
-        <div class="row row-footer">
+        <div class="row-footer">
             <div class="col-4 h-100">
                 © 2015 Company. All right reserved.
             </div>
@@ -367,7 +358,7 @@
                 <img src="/foto/form-footer/logo-cahee.svg" alt="logo" />
             </div>
             <div class="col-4 h-100">
-                Made with <span class="end-red-text">love</span> by Auskteez
+                Made with <span class="end-red-text">love</span> by <span class="smoll-footer">Auskteez</span>
             </div>
         </div>
     </footer>
