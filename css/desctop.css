@@ -1,4 +1,65 @@
-@media (min-width: 768px) {
+@media (min-width: 576px) {
+    
+    .title-fresh {
+        font-size: 60px;
+    }
+
+    .title__paragraph {
+        font-size: 17px;
+    }
+
+    .title__90 {
+        font-size: 50px;
+    }
+
+    .conteiner-gallery {
+        width: 90%;
+        flex-direction: row;
+    }
+
+    .two-img-row {
+        flex-direction: row;
+    }
+
+    .gallery-img {
+        display: block;
+        width: 100%;
+        max-width: 775px;
+        height: auto;
+        margin: 0 auto;
+    }
+    
+    .gallery-img-colume {
+        width: 100%;
+    }
+    
+    .gallery-img-row {
+        width: 50%;
+    }
+
+    .container-blog {
+        font-size: 1.5rem;
+    }
+
+    .card-blog-number {
+        width: 4.5rem;
+    }
+
+    .cahee-email {
+        font-size: 1rem;
+    }
+
+    .title-header {
+        font-size: 5rem;
+    }
+
+    .smoll-footer {
+        font-size: inherit;
+    }
+}
+
+@media (min-width: 768px) {    
+
     .paragraph__fresh {
         width: 50%;
         margin: 0 auto;
@@ -12,6 +73,15 @@
         margin-top: 10%;
     }
 
+    .row__about {
+        background-image: none;
+    }
+
+    .text-about {
+        text-align: left;
+        background: none;
+    }
+
     .img-col {
         display: block;
     }
@@ -22,16 +92,25 @@
         max-width: 600px;
         height: auto;
         margin: 0 auto;
+    }    
+
+    .container-blog {
+        font-size: 1rem;
+    }
+
+    .card-blog-number{
+        top: 1rem;
+        left: 1rem;
+        width: 3rem;
+    }
+
+    .card-blog-text {
+        bottom: 1rem;
+        left: 1rem;
     }
 }
 
 @media (min-width: 1200px) {
-
-    /* section wrapper */
-    
-    .wrapper {
-        background-size: cover;
-    }
     
     /* position for elements */
     
@@ -41,13 +120,6 @@
     
     .position-abs {
         position: absolute;
-    }
-    
-    .align__center {
-        height: 5em;
-        display: flex;
-        align-items: center;
-        justify-content: center; 
     }
     
     .row__margin {
@@ -68,6 +140,10 @@
         padding: 40px 0;
     }
 
+    .header-mobile {
+        display: block;
+    }
+
     .page-header-logo {
         width: auto;
         float: left;
@@ -85,26 +161,7 @@
 
     .navigation__menu {
         display: flex;
-        align-items: center;
-        justify-content: space-around;
-        list-style-type: none;
-    }
-    
-    .navigation__link {
-        display: block;
-        padding: 5px 0;
-        color: #000000;
-        text-decoration: none;
-        border-top: 3px solid transparent;
-    }
-    
-    .navigation__item--active .navigation__link {
-        border-color: #FF6033;
-    }
-    
-    .navigation__link:hover {
-        border-color: #FF6033;
-        color: #000000;
+        flex-direction: row;
     }
     
     /* FRESH style */
@@ -140,7 +197,6 @@
     
     .about {
         padding: 0;
-        height: 80vh;
         background: rgb(0,196,196);
         background: radial-gradient(circle, rgba(0,196,196,1) 0%, rgba(0,194,194,1) 14%, rgba(0,187,187,1) 50%, rgba(0,156,156,1) 100%);
     }
@@ -156,6 +212,16 @@
     .title__90 {
         font-size: 90px;
     }
+
+    /* TOMATOES style */
+    
+    .title__tomatoes {
+        bottom: 30vh;
+    }
+    
+    .button-prgph {
+        text-align: left;
+    }
     
     /* GALLERY style */
     
@@ -165,7 +231,7 @@
     }
     
     .gallery-prgph {
-        margin: 2vh 31vw 5vh;
+        padding: 2rem 13rem;
     }
     
     .button-gallery {
@@ -174,89 +240,36 @@
     
     /* SUBSCRIBE style */
     
-    .wrapper-subscribe {
-        min-height: 70vh;  
-        background-image: url('/foto/subcribe/bg.png');
+    .wrapper-mobile-subs {
+       width: 50%;
     }
-    
+
     .paragraph-sssubscribe {
         margin: 20px 0;
     }
     
     .subscribe-text {
-        width: 35%;
-        bottom: 35%;
-        left: 9%;
+        padding-left: 10%;
     }
     
     .row-for-input {
-        display: flex;
         width: 55vw;
+        flex-direction: row;
     }
     
     .input-sub {
+        margin: 0;
         width: 74%;
     }
     
     .button-subscribe {
-        margin: 0;
         margin-left: 30px;
-        background-color: #96B92C;
-    }
-    
-    /* TOMATOES style */
-    
-    .tomatoes {
-        padding: 10%;
-        min-height: 100vh;
-        background-color: #70BFFF;
-    }
-    
-    .title__tomatoes {
-        bottom: 30vh;
-    }
-    
-    .button-tomatoes {
-        width: 100%;
-        display: inline-flex;
-    }
-    
-    /* .button-prgph {
-        text-align: left;
-    } */
-    
-    .tomatoes-svg{
-        width: 50%;
     }
     
     /* BLOG style */
     
-    .blog {
-        background-color: #B07CF7;
-    }
-    
-    .container-blog {
-        padding-top: 4vw;
-        height: 100vh;
-        font-family: 'Raleway', sans-serif;
-        color: #ffffff;
-    }
-    
     .big__blog {
         font-size: 90px;
-        font-weight: bold;
-        text-align: center;
-    }
-    
-    .card-becgrnd {
-        background-color: #B07CF7;
-    }
-        
-    .align__center {
-        height: 5em;
-        display: flex;
-        align-items: center;
-        justify-content: center; 
     }
     
     .p-spacing {
@@ -266,23 +279,16 @@
         letter-spacing: -1px;
     }
     
-    .flex-blog {
-        display: flex;
-        height: 100%;
-        align-items: flex-start;
-        flex-direction: column;
-        justify-content: space-between;
+    .card-blog-number{
+        top: 2rem;
+        left: 2rem;
+        width: 4.5rem;
     }
     
-    .flex-blog-text {
-        justify-content: space-around;
-    }
-    
-    .flex-blog-number{
-        width: 20%;
-        border-radius: 4px;
-        background-color: rgba(0, 0, 0, 0.40);
-        text-align: center;
+    .card-blog-text {
+        position: absolute;
+        bottom: 2rem;
+        left: 2rem;
     }
     
     .text__nomber {
@@ -291,21 +297,12 @@
     
     /* FOOTER-FORM style */
     
-    .header {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-top: 7%;
-    }
-    
     .header-prgph {
-        text-align: center;
         padding: 1% 39% 2%;
     }
     
     .wrapper-form {
-        height: 60rem;
-        background-image: url('/foto/form-footer/bg.png');
+        height: 880px;
     }
     
     .container-forms {
@@ -314,41 +311,12 @@
     }
     
     .all-form {
-        width: 50%;
-    }
-    
-    .all-form-style {
-        background-color: rgb(0, 196, 196);
-        border: none;    
-        border-left: 5px solid #355c8200; 
-        opacity: 0.4;
-        color: #ffffff;
-        font-weight: bold;
-        width: 30vw;
-        height: 6vh;
-    }
-    
-    .all-form-style:focus {
-        outline: none;
-        border-left: 5px solid #355B82; 
-        opacity: 1;
-    }
-    
-    .all-form-style::placeholder{
-        font-weight: normal;
-        color: #ffffff;
+        width: 100%;
     }
     
     .form-textarea {
-        max-width: 30vw; 
-        min-width: 30vw; 
         height: 250px;
         max-height: 50vh;
-    }
-    
-    .address-col {
-        display: flex;
-        flex-direction: column;
     }
     
     .end-blog {
@@ -368,5 +336,4 @@
     .end-red-text {
         color: #FF2B58;
     }
-    }
-    
+}
